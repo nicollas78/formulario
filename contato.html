@@ -1,0 +1,63 @@
+<DOCTYPE html> 
+	
+	<html leang="pt-br"> 
+
+    	<head>
+    		
+    		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE"content="IE-edge">
+        <meta nome="viewport"content="width-device-width, initial-scale-1.0">
+        <?php include("email.php"); ?>
+            
+                <title> Formulario  </title>
+       <style type="text/css">
+       body{font-family: arial, helvetica, sans -serif }
+       .content{display:flex; justify-content: center;}
+       .contato{width: 100%; max-width: 500px;}
+       .form{display: flex; flex-direction: column;}
+       .field{padding: 10px; margin-bottom: 15px; border: 1px solid #DDD; border-radius:5px; font-family: arial, helvetica, sans -serif; font-size: 16px;   } 
+       textarea{height: 150px;}
+           
+       </style>         
+       
+  </head>
+     <body>
+        <section class="content">
+
+      <div class="contato">
+
+     <h3>Formulario de Contato</h3>          
+  
+    <form class="form" action="./email.php" method="POST" enctype="text/plain">
+     
+     Seu Nome Completo:<br/>
+     <input class="field" name="nome" placeholder="Nome Completo" required /><br/>
+     
+     Seu RG:<br/>
+     <input class="field" name="rg" placeholder="RG" required /><br/>
+
+     Seu CPF:<br/>
+     <input class="field" name="cpf" placeholder="CPF" required /><br/>
+
+     Seu Endereço:<br/>
+     <input class="field" name="endereco" placeholder="Endereço" required /><br/>
+
+      Seu Telefone ou Whatsapp:<br/>
+     <input class="field" name="telefone" placeholder="Telefone ou Whatsapp" required /><br/>
+
+     Seu E-mail:<br/>
+     <input class="field" name="email" placeholder="E-mail" required><br/>
+     
+     Sua Mensagem:<br/>
+     <textarea class="field" name="mensagem" row="5" placeholder="Digite sua mensagem aqui" required></textarea><br/>
+     <input class="field" type="submit" value="Enviar"/>
+     <input  class= "field" type="reset" value="limpar"/>
+
+
+
+       </form>
+     </div>
+   </section>
+
+   
+    </body>
